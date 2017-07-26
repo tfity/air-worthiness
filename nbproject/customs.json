@@ -1,0 +1,12 @@
+{
+    "elements": {
+        "ba-sidebar": {},
+        "content-top": {},
+        "page-top": {}
+    },
+    "attributes": {
+        "ui-view": {
+            "context": "div"
+        }
+    }
+}
