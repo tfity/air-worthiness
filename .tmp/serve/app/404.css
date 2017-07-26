@@ -8,7 +8,7 @@ html, body {
 
 body {
   font: 12px/16px "Roboto", sans-serif;
-  color: #666666;
+  color: #aaa;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -46,7 +46,7 @@ body {
     text-decoration: none;
     outline: none;
     transition: all 0.2s ease;
-    color: #209e91;
+    color: #E6E0C5;
     display: inline-block; }
     .page-not-found-modal a:hover {
-      color: #1b867b; }
+      color: #c4bea7; }
