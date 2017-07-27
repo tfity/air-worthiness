@@ -63,7 +63,7 @@
 
     function updatePieCharts() {
       $('.pie-charts .chart').each(function(index, chart) {
-        $(chart).data('easyPieChart').update(getRandomArbitrary(55, 90));
+        $(chart).data('easyPieChart').update(40);
       });
     }
 

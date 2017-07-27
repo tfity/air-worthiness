@@ -1,0 +1,29 @@
+<div class="horizontal-scroll">
+  <table class="table table-hover" st-table="editableTableData">
+    <thead>
+    <tr class="sortable">
+      <th class="table-id" st-sort="id" st-sort-default="true">#</th>
+      <th st-sort="firstName">First Name</th>
+      <th st-sort="lastName">Last Name</th>
+      <th st-sort="username">Username</th>
+      <th st-sort="email">Email</th>
+      <th st-sort="age">Age</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr ng-repeat="item in ajcEditableTableData" class="editable-tr-wrap">
+      <td class="table-id">{{item.id}}</td>
+      <td><span  blur="cancel">{{item.checkName}}</span></td>
+      <td><span  blur="cancel">{{item.checkFreq}}</span></td>
+      <td><span editable-text="item.username" blur="cancel">{{item.lastPerformed}}</span></td>
+      <td><a class="email-link" ng-href="mailto:{{item.email}}">{{item.nextDue}}</a></td>
+      <td><span editable-text="item.age" blur="cancel">{{item.toGo}}</span></td>
+    </tr>
+    </tbody>
+    <tfoot>
+    <tr>
+      <td colspan="6" class="text-center">
+        <div st-pagination="" st-items-by-page="12" st-displayed-pages="5"></div>
+      </td>
+    </tr>
+ 
