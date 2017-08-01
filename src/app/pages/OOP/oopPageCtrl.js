@@ -1,11 +1,11 @@
 (function () {
   'use strict';
 
-  angular.module('BlurAdmin.pages.tables')
-      .controller('TablesPageCtrl', TablesPageCtrl);
+  angular.module('BlurAdmin.pages.oop')
+      .controller('oopPageCtrl', oopPageCtrl);
 
   /** @ngInject */
-  function TablesPageCtrl($scope, $filter, editableOptions, editableThemes) {
+  function oopPageCtrl($scope, $filter, editableOptions, editableThemes) {
 
     $scope.smartTablePageSize = 10;
 

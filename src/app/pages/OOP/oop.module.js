@@ -7,18 +7,16 @@
   /** @ngInject */
   function routeConfig($stateProvider, $urlRouterProvider) {
     $stateProvider
-        .state('tables', {
-          url: '/tables',
-          template : '<ui-view  autoscroll="true" autoscroll-body-top></ui-view>',
-          abstract: true,
-          controller: 'TablesPageCtrl',
+        .state('oop', {
+          url: '/oop',
+          templateUrl : 'app/pages/oop/oop.html',
+          controller: 'oopPageCtrl',
           title: 'OOP',
           sidebarMeta: {
             icon: 'ion-grid',
             order: 300,
-          },
+          }
         });
-    $urlRouterProvider.when('/oop');
   }
 
 })();
